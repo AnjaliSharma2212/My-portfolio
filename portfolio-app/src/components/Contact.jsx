@@ -95,7 +95,7 @@ export default function ContactSection() {
                 rel="noopener noreferrer"
                 className="hover:underline"
               >
-                www.linkedin.com/in/anjalisharma042
+                linkedin.com/anjalisharma042
               </a>
             </p>
             <p className="flex items-center gap-3 text-lg text-gray-600">
