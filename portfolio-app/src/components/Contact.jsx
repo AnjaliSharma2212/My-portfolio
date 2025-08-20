@@ -2,7 +2,8 @@ import { useState } from "react";
 import { FaPhoneAlt, FaEnvelope, FaLinkedin, FaGithub } from "react-icons/fa";
 import { motion } from "framer-motion";
 import toast from "react-hot-toast";
-
+import { SiMessenger } from "react-icons/si";
+import { GiLoveLetter } from "react-icons/gi";
 export default function ContactSection() {
   const [formData, setFormData] = useState({
     name: "",
@@ -40,7 +41,7 @@ export default function ContactSection() {
         <div className="fixed inset-0 flex items-center justify-center bg-black/30 backdrop-blur-sm z-50">
           <div className="bg-white rounded-2xl shadow-xl p-8 max-w-md text-center">
             <h2 className="text-2xl text-black font-bold text-green-400">
-              ✅ Sent Successfully! 🙂
+              ✅ Sent Successfully!🙂
             </h2>
             <p className="mt-2 text-gray-800 ">
               Thank you for reaching out. I'll get back to you soon.
@@ -58,10 +59,41 @@ export default function ContactSection() {
       {/* Contact Form & Info */}
       <div className="relative z-10 max-w-6xl mx-auto  grid md:grid-cols-2 gap-30 px-6">
         <div>
-          <motion.h2 className="text-4xl font-bold mb-6 text-transparent bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text">
-            Get In Touch
+          <motion.h2
+            className="relative flex items-center justify-center text-4xl md:text-5xl font-extrabold mb-12 
+  text-transparent bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text drop-shadow-lg"
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
+            {/* Shimmer Text */}
+            <motion.div
+              animate={{ rotate: [0, 15, -20, 0] }}
+              transition={{ repeat: Infinity, duration: 2 }}
+              className="text-5xl text-purple-400"
+            >
+              <GiLoveLetter />
+            </motion.div>
+            <motion.span
+              animate={{
+                backgroundPosition: ["200% center", "0% center", "200% center"],
+              }}
+              transition={{ duration: 6, repeat: Infinity, ease: "linear" }}
+              className="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 
+    bg-[length:200%_200%] bg-clip-text text-transparent inline-block"
+            >
+              Get In Touch
+            </motion.span>
+            <motion.div
+              animate={{ rotate: [0, 15, -20, 0] }}
+              transition={{ repeat: Infinity, duration: 2 }}
+              className="text-5xl text-purple-400"
+            >
+              <SiMessenger />
+            </motion.div>
           </motion.h2>
-          <form onSubmit={handleSubmit} className="space-y-4">
+
+          <form onSubmit={handleSubmit} className="space-y-4 ">
             <input
               type="text"
               name="name"
@@ -69,7 +101,7 @@ export default function ContactSection() {
               required
               value={formData.name}
               onChange={handleChange}
-              className="w-full p-3 rounded-lg bg-white/10 dark:bg-gray-800/20 border focus:border-purple-500 focus:ring-2 focus:ring-purple-500"
+              className="w-full p-3 rounded-lg bg-white/10 dark:bg-gray-800/20 border border-white/20 focus:border-purple-500 focus:ring-2 focus:ring-purple-500 outline-none backdrop-blur-md"
             />
             <input
               type="email"
@@ -78,7 +110,7 @@ export default function ContactSection() {
               required
               value={formData.email}
               onChange={handleChange}
-              className="w-full p-3 rounded-lg bg-white/10 dark:bg-gray-800/20 border focus:border-purple-500 focus:ring-2 focus:ring-purple-500"
+              className="w-full p-3 rounded-lg bg-white/10 dark:bg-gray-800/20 border border-white/20 focus:border-purple-500 focus:ring-2 focus:ring-purple-500 outline-none backdrop-blur-md"
             />
             <textarea
               name="message"
@@ -87,7 +119,7 @@ export default function ContactSection() {
               required
               value={formData.message}
               onChange={handleChange}
-              className="w-full p-3 rounded-lg bg-white/10 dark:bg-gray-800/20 border focus:border-purple-500 focus:ring-2 focus:ring-purple-500"
+              className="w-full p-3 rounded-lg bg-white/10 dark:bg-gray-800/20 border border-white/20 focus:border-purple-500 focus:ring-2 focus:ring-purple-500 outline-none backdrop-blur-md"
             />
             <motion.button
               whileHover={!loading ? { scale: 1.05 } : {}}
