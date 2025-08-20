@@ -1,97 +1,3 @@
-// import { FaPhoneAlt, FaEnvelope, FaLinkedin, FaGithub } from "react-icons/fa";
-// import { motion } from "framer-motion";
-
-// export default function ContactSection() {
-//   return (
-//     <section
-//       id="contact"
-//       className="bg-gradient-to-r from-gray-100 via-gray-800 to-gray-600 py-16 px-6 md:px-20"
-//     >
-//       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
-//         {/* Left Side - Contact Form */}
-//         <div>
-//           <h2 className="text-3xl font-bold mb-6">Get In Touch</h2>
-//           <form
-//             action="https://formspree.io/f/xjkoadkq"
-//             method="POST"
-//             className="space-y-4"
-//           >
-//             <input
-//               type="text"
-//               name="name"
-//               placeholder="Your Name"
-//               required
-//               className="w-full p-3 rounded-lg bg-gray-800 border border-gray-700 focus:border-purple-500 focus:ring-2 focus:ring-purple-500 outline-none"
-//             />
-//             <input
-//               type="email"
-//               name="email"
-//               placeholder="Your Email"
-//               required
-//               className="w-full p-3 rounded-lg bg-gray-800 border border-gray-700 focus:border-purple-500 focus:ring-2 focus:ring-purple-500 outline-none"
-//             />
-//             <textarea
-//               name="message"
-//               rows="5"
-//               placeholder="Your Message"
-//               required
-//               className="w-full p-3 rounded-lg bg-gray-800 border border-gray-700 focus:border-purple-500 focus:ring-2 focus:ring-purple-500 outline-none"
-//             ></textarea>
-//             <motion.button
-//               whileHover={{ scale: 1.05 }}
-//               whileTap={{ scale: 0.95 }}
-//               type="submit"
-//               className="w-full py-3 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white font-semibold rounded-lg shadow-lg hover:shadow-[0_0_20px_rgba(59,130,246,0.7)] transition-all"
-//             >
-//               Send Message
-//             </motion.button>
-//           </form>
-//         </div>
-
-//         {/* Right Side - Contact Info */}
-//         <div className="flex flex-col justify-center space-y-6">
-//           <motion.div
-//             animate={{ rotate: [0, 20, -20, 0] }}
-//             transition={{ repeat: Infinity, duration: 2 }}
-//             className="text-4xl text-purple-400"
-//           >
-//             <FaPhoneAlt />
-//           </motion.div>
-//           <div>
-//             <p className="flex items-center gap-3 text-lg">
-//               <FaPhoneAlt className="text-blue-400" /> +91 6005377803
-//             </p>
-//             <p className="flex items-center gap-3 text-lg">
-//               <FaEnvelope className="text-red-400" /> anjalivce19a@gmail.com
-//             </p>
-//             <p className="flex items-center gap-3 text-lg">
-//               <FaLinkedin className="text-blue-500" />
-//               <a
-//                 href="https://linkedin.com/in/anjalisharma042"
-//                 target="_blank"
-//                 rel="noopener noreferrer"
-//                 className="hover:underline"
-//               >
-//                 linkedin.com/in/anjalisharma042
-//               </a>
-//             </p>
-//             <p className="flex items-center gap-3 text-lg">
-//               <FaGithub className="text-gray-400" />
-//               <a
-//                 href="https://github.com/AnjaliSharma2212"
-//                 target="_blank"
-//                 rel="noopener noreferrer"
-//                 className="hover:underline"
-//               >
-//                 github.com/AnjaliSharma2212
-//               </a>
-//             </p>
-//           </div>
-//         </div>
-//       </div>
-//     </section>
-//   );
-// }
 import { FaPhoneAlt, FaEnvelope, FaLinkedin, FaGithub } from "react-icons/fa";
 import { motion } from "framer-motion";
 
@@ -184,12 +90,13 @@ export default function ContactSection() {
             <p className="flex items-center gap-3 text-lg text-gray-600">
               <FaLinkedin className="text-blue-500" />
               <a
-                href="https://linkedin.com/in/anjalisharma042"
+                href="www.linkedin.com/in/anjalisharma042
+"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:underline"
               >
-                linkedin.com/in/anjalisharma042
+                www.linkedin.com/in/anjalisharma042
               </a>
             </p>
             <p className="flex items-center gap-3 text-lg text-gray-600">
