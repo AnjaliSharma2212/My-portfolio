@@ -90,8 +90,7 @@ export default function ContactSection() {
             <p className="flex items-center gap-3 text-lg text-gray-600">
               <FaLinkedin className="text-blue-500" />
               <a
-                href="www.linkedin.com/in/anjalisharma042
-"
+                href="www.linkedin.com/in/anjalisharma042"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:underline"
