@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import projectMeme from "../assets/images/projectMeme.png";
-import projectVirtual from "../assets/images/projectVirtual.png";
+import EcoGoals from "../assets/images/projectFarm.png";
 import projectFarm from "../assets/images/projectFarm.png";
 import crowdfunding from "../assets/images/crowdfunding.png";
 import rick from "../assets/images/rick.png";
