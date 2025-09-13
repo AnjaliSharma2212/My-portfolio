@@ -48,8 +48,7 @@ export default function Projects() {
         "Lucide-React",
         "Framer-motion",
       ],
-      github:
-        "https://github.com/AnjaliSharma2212/EcoGoals, https://github.com/AnjaliSharma2212/EcoGoals-Backend",
+      github: "https://github.com/AnjaliSharma2212/EcoGoals",
       Check: "https://myecogoals-anjali.netlify.app/",
       image: `${EcoGoals}`,
     },
