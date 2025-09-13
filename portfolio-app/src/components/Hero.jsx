@@ -14,7 +14,7 @@ export default function Hero() {
   const mouseY = useMotionValue(0);
   const rotateX = useTransform(mouseY, [-100, 100], [10, -10]);
   const rotateY = useTransform(mouseX, [-100, 100], [-10, 10]);
-  const fileId = "19RLDMKgfsRCP6yE8T-yfTWqTYov6b0bd";
+  const fileId = "1I_3C7zeH4W9u2i_kyWGJ-FkZA5Y56CJF";
   useEffect(() => {
     const handleMouseMove = (e) => {
       if (!heroRef.current) return;

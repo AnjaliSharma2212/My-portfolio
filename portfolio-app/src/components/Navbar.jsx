@@ -9,10 +9,10 @@ export default function Navbar() {
 
   // ✅ Function to view & download resume
   const handleResumeClick = () => {
-    const fileId = "19RLDMKgfsRCP6yE8T-yfTWqTYov6b0bd";
-
+    const fileId = "1I_3C7zeH4W9u2i_kyWGJ-FkZA5Y56CJF";
+    //drive.google.com/file/d/1I_3C7zeH4W9u2i_kyWGJ-FkZA5Y56CJF/view?usp=sharing
     // 1. Open Google Drive in a new tab (must be first so popup isn't blocked)
-    window.open(
+    https: window.open(
       `https://drive.google.com/file/d/${fileId}/view?usp=sharing`,
       "_blank"
     );
