@@ -40,7 +40,7 @@ export default function ContactSection() {
       {success && (
         <div className="fixed inset-0 flex items-center justify-center bg-black/30 backdrop-blur-sm z-50">
           <div className="bg-white rounded-2xl shadow-xl p-8 max-w-md text-center">
-            <h2 className="text-2xl text-black font-bold text-green-400">
+            <h2 className="text-2xl font-bold text-green-400">
               ✅ Sent Successfully!🙂
             </h2>
             <p className="mt-2 text-gray-800 ">
@@ -183,7 +183,7 @@ export default function ContactSection() {
                 link: "https://www.linkedin.com/in/anjalisharma042",
               },
               {
-                icon: <FaGithub className="text-gray-700 text-gray-300" />,
+                icon: <FaGithub className="text-gray-700 " />,
                 text: "github.com/AnjaliSharma2212",
                 link: "https://github.com/AnjaliSharma2212",
               },

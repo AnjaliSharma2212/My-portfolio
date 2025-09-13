@@ -34,9 +34,9 @@ export default function Projects() {
       image: `${projectFarm}`,
     },
     {
-      title: "Virtual Dashboard",
+      title: "EcoGoals",
       description:
-        "A application where a user can create a session like virtual classroom and chit chat in realtime.",
+        "EcoGoals is your personal hub for sustainable living. Whether you've switched to reusable bags, planted a tree, or biked to work—this app lets you log your eco-friendly actions, share them with a like-minded community, and build daily streaks that celebrate your commitment to the planet.",
       tech: [
         "React",
         "Tailwind",
@@ -45,10 +45,13 @@ export default function Projects() {
         "Express",
         "Mongoose",
         "Postman",
+        "Lucide-React",
+        "Framer-motion",
       ],
-      github: "https://github.com/AnjaliSharma2212/Virtual-classroom",
-      Check: "https://virtual-classroom-vir.netlify.app",
-      image: `${projectVirtual}`,
+      github:
+        "https://github.com/AnjaliSharma2212/EcoGoals, https://github.com/AnjaliSharma2212/EcoGoals-Backend",
+      Check: "https://myecogoals-anjali.netlify.app/",
+      image: `${EcoGoals}`,
     },
     {
       title: "Another Cool Project",
