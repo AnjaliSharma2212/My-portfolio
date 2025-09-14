@@ -3,10 +3,12 @@ import { useState } from "react";
 import projectMeme from "../assets/images/projectMeme.png";
 import ecoGoals from "../assets/images/ecoGoals.png";
 import projectFarm from "../assets/images/projectFarm.png";
+import hiddenObj from "../assets/images/hiddenObj.png";
 import crowdfunding from "../assets/images/crowdfunding.png";
 import rick from "../assets/images/rick.png";
 export default function Projects() {
   const [showAll, setShowAll] = useState(false);
+  const [expandedIndex, setExpandedIndex] = useState(null);
 
   const projects = [
     {
@@ -53,6 +55,22 @@ export default function Projects() {
       image: `${projectFarm}`,
     },
 
+    {
+      title: "HiddenObj",
+      description:
+        "An interactive React and Tailwind CSS powered Hidden Object Game where players race against the clock to find hidden items in detailed scenes. Featuring clickable hotspots, countdown timers, scoring system, and a dynamic object list.",
+      tech: [
+        "Reactjs",
+        "ui",
+        "Animation",
+        "TailWindCss",
+        "React-router",
+        "React",
+      ],
+      github: "https://github.com/StutiSharan/Game-Project",
+      Check: "https://mysteryspot.netlify.app",
+      image: `${hiddenObj}`,
+    },
     {
       title: "CrowdFunding",
       description:
@@ -108,7 +126,7 @@ export default function Projects() {
         {displayedProjects.map((p, index) => (
           <motion.div
             key={p.title}
-            className="group relative rounded-xl overflow-hidden bg-white/10 dark:bg-gray-800/20 backdrop-blur-md border border-white/20 shadow-lg hover:shadow-[0_0_25px_rgba(59,130,246,0.6)] transition-all"
+            className="group relative rounded-xl overflow-hidden bg-gray-800/20 backdrop-blur-md border border-white/20 shadow-lg hover:shadow-[0_0_25px_rgba(59,130,246,0.6)] transition-all"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: index * 0.2 }}
@@ -126,11 +144,21 @@ export default function Projects() {
 
             {/* Project Info */}
             <div className="p-6">
-              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
-                {p.title}
+              <h3 className="text-xl font-bold text-purple-500 mb-2">
+                <i>{p.title}</i>
               </h3>
-              <p className="text-gray-700 dark:text-gray-400 mb-4">
-                {p.description}
+              <p className="text-gray-700 dark:text-gray-500 mb-4 overflow-hidden">
+                {expandedIndex === index
+                  ? p.description
+                  : `${p.description.split(" ").slice(0, 25).join(" ")}...`}
+                <button
+                  onClick={() =>
+                    setExpandedIndex(expandedIndex === index ? null : index)
+                  }
+                  className="text-blue-600 hover:underline text-md px-2 py-2"
+                >
+                  {expandedIndex === index ? "Show Less" : "Show More"}
+                </button>
               </p>
 
               {/* Tech Stack Badges */}
