@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import projectMeme from "../assets/images/projectMeme.png";
-import EcoGoals from "../assets/images/EcoGoals.png";
+import ecoGoals from "../assets/images/ecoGoals.png";
 import projectFarm from "../assets/images/projectFarm.png";
 import crowdfunding from "../assets/images/crowdfunding.png";
 import rick from "../assets/images/rick.png";
@@ -9,30 +9,6 @@ export default function Projects() {
   const [showAll, setShowAll] = useState(false);
 
   const projects = [
-    {
-      title: "Meme-Hub Website",
-      description:
-        "Meme-Hub a project which helps to create memes and also post like Social Media.",
-      tech: [
-        "React",
-        "Tailwind CSS",
-        "Framer Motion",
-        "Firebase",
-        "React-Router",
-      ],
-      github: "https://github.com/AnjaliSharma2212/MemeHub-Project-",
-      Check: "https://jokejunction-memehub-44acfd.netlify.app",
-      image: `${projectMeme}`,
-    },
-    {
-      title: "FreshRoots App",
-      description:
-        "Farm app with authentication and payments Consumer can order the fresh consuming things right away directly from Farm.",
-      tech: ["React", "Node.js", "Firestore", "Firebase", "DOM"],
-      github: "https://github.com/AnjaliSharma2212/FarmToKitchen",
-      Check: "https://farmtokitchen-app.netlify.app",
-      image: `${projectFarm}`,
-    },
     {
       title: "EcoGoals",
       description:
@@ -50,12 +26,37 @@ export default function Projects() {
       ],
       github: "https://github.com/AnjaliSharma2212/EcoGoals",
       Check: "https://myecogoals-anjali.netlify.app/",
-      image: `${EcoGoals}`,
+      image: `${ecoGoals}`,
     },
     {
-      title: "Another Cool Project",
+      title: "Meme-Hub Website",
       description:
-        "A web-based crowdfunding application that allows users to create campaigns, manage patient details, and authenticate users securely. This application is built with a clear separation of concerns, utilizing HTML, CSS, JavaScript,DOM and Firebase Firestore.",
+        "Meme-Hub is a fun and interactive web app that lets users create custom memes and share them just like on social media. It combines meme generation tools with a posting interface, allowing users to express humor and creativity in a community-style feed. With a simple UI and dynamic features, Meme-Hub turns meme-making into a social experience.",
+      tech: [
+        "React",
+        "Tailwind CSS",
+        "Framer Motion",
+        "Firebase",
+        "React-Router",
+      ],
+      github: "https://github.com/AnjaliSharma2212/MemeHub-Project-",
+      Check: "https://jokejunction-memehub-44acfd.netlify.app",
+      image: `${projectMeme}`,
+    },
+    {
+      title: "FreshRoots App",
+      description:
+        "This farm-to-consumer web app enables users to order fresh produce directly from local farms. It features secure user authentication and integrated payment options for a seamless shopping experience. Consumers can browse, select, and purchase farm-fresh items instantly. Designed for convenience and trust, the app bridges the gap between growers and buyers",
+      tech: ["React", "Node.js", "Firestore", "Firebase", "DOM"],
+      github: "https://github.com/AnjaliSharma2212/FarmToKitchen",
+      Check: "https://farmtokitchen-app.netlify.app",
+      image: `${projectFarm}`,
+    },
+
+    {
+      title: "CrowdFunding",
+      description:
+        " This web-based crowdfunding app enables users to launch campaigns, manage patient records, and ensure secure authentication. Built with HTML, CSS, JavaScript, and Firebase Firestore, it maintains a clean separation of concerns for scalability and clarity. DOM manipulation powers dynamic interactions, while Firebase handles real-time data and user security. Ideal for medical fundraising, the app blends usability with robust backend support.",
       tech: ["HTML", "CSS3", "JavaScript"],
       github: "https://github.com/AnjaliSharma2212/CrowdFunding",
       Check: "https://crowdfundingsite20.netlify.app/",
@@ -63,7 +64,8 @@ export default function Projects() {
     },
     {
       title: "Rick-Morty",
-      description: "Rick Morty Api i fetch from and then show info about it.",
+      description:
+        "This project fetches data from the Rick and Morty API and displays character and episode information in a clean, interactive interface. It showcases API integration, dynamic rendering, and DOM manipulation using JavaScript. Users can explore details like names, species, locations, and more—straight from the multiverse!",
       tech: ["Node.js", "Express", "MongoDB"],
       github: "https://github.com/AnjaliSharma2212/Rick-Morty",
       Check: "https://rickandmortyapi234.netlify.app/",
