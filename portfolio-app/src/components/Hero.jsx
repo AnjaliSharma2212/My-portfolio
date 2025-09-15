@@ -14,7 +14,7 @@ export default function Hero() {
   const mouseY = useMotionValue(0);
   const rotateX = useTransform(mouseY, [-100, 100], [10, -10]);
   const rotateY = useTransform(mouseX, [-100, 100], [-10, 10]);
-  const fileId = "1I_3C7zeH4W9u2i_kyWGJ-FkZA5Y56CJF";
+
   useEffect(() => {
     const handleMouseMove = (e) => {
       if (!heroRef.current) return;
@@ -29,10 +29,11 @@ export default function Hero() {
     return () => window.removeEventListener("mousemove", handleMouseMove);
   }, []);
   const handleResumeClick = () => {
-    const fileId = "19RLDMKgfsRCP6yE8T-yfTWqTYov6b0bd";
+    const fileId = "1WoRzGuAvqZ0v8AY3iC4udFp3j7gPtWsO";
+    //drive.google.com/file/d/1WoRzGuAvqZ0v8AY3iC4udFp3j7gPtWsO/view?usp=drive_link
 
     // 1. Open Google Drive in a new tab (must be first so popup isn't blocked)
-    window.open(
+    https: window.open(
       `https://drive.google.com/file/d/${fileId}/view?usp=sharing`,
       "_blank"
     );
